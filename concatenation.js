@@ -7,11 +7,15 @@ submitButton.addEventListener("click", function() {
     let mood = document.querySelector(".mood").value;
     let food = document.querySelector(".food-name").value;
     let birthYear = document.querySelector(".year").value;
-    let age = 2023 - birthYear; // update to 2024, if necessary
+    let age = 2026 - birthYear; // update to 2024, if necessary
     // 1. Declare a variable to save the value of the city the user is from.
+    let city = document.querySelector(".city").value;
 
     // 2. Below write your sentences! 
+
     // - Have them show up in the div with class "results".
+    let sentence = document.querySelector(".results")
+    sentence.innerHTML = "Hi I am " + myName + ". I'm very " + mood + ". I reall enjoy eating " + food + ". I am " + age + " years old.";
     // - Example paragraph: "My name is (myName). I'm feeling (mood) and I absolutely lovveeee eating (food) 😍..."
     // - Try placing your sentences into <p> or <li> tags.
 
